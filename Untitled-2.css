@@ -24,6 +24,10 @@ header {
     justify-content: space-between;
 }
 
+#hamburger {
+    display: none;
+}
+
 #navbarlist {
     height: 70px;
     margin-top: 0;
@@ -80,6 +84,22 @@ header {
     color: rgb(21, 21, 122);
 
 }
+
+#mobilemenu {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    #navbarlist {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+}
+
+
 
 #home {
     margin: 0 auto;
