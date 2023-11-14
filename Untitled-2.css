@@ -137,6 +137,7 @@ header {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 769px) {
