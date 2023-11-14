@@ -13,7 +13,6 @@ body {
 }
 
 
-
 header {
     display: flex;
     height: 70px;
@@ -22,10 +21,6 @@ header {
     border-color: rgb(0, 0, 0);
     margin: 0 auto;
     justify-content: space-between;
-}
-
-#hamburger {
-    display: none;
 }
 
 #navbarlist {
@@ -85,9 +80,11 @@ header {
 
 }
 
+
 #mobilemenu {
     display: none;
 }
+
 
 @media (max-width: 769px) {
     #navbarlist {
@@ -96,15 +93,48 @@ header {
 
     #mobilemenu {
         display: block;
+        position: relative;
+        margin-left: 50px;
+        margin-top: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        border: 2px solid;
+        border-color: black;
+        border-radius: 3px;
+        background-color: white;
     }
+
+    #hamburgerlist {
+        display: none;
+        list-style-type: none;
+        background-color: white;
+        text-decoration: none;
+        color: rgb(21, 21, 122);
+    }
+
+    #hamburgerlist > li {
+        font-size: 25px;
+        padding: 0px 15px 0px 15px;
+        text-decoration: none;
+        color: rgb(21, 21, 122);
+        border-top: 2px solid;
+        border-color: black;
+        padding: 10px 0px 10px 0px;
+    }
+
+    #hamburgerlist > li > a {
+        font-size: 25px;
+        padding: 0px 15px 0px 15px;
+        text-decoration: none;
+        color: rgb(21, 21, 122);
+    }
+    
+
 }
-
-
 
 #home {
     margin: 0 auto;
     width: 100%;
-    min-height: 100vh; 
     background-color: white;
 }
 
@@ -123,7 +153,7 @@ header {
 
 @media (max-width: 769px) {
     #banner1 {
-        min-height: 20vh; 
+        min-height: 25vh; 
         background-image: url('Images/HomeBannerSmall.png');
     }
 }
@@ -139,6 +169,7 @@ header {
     border-bottom: 3px solid;
     border-color: black;
 }
+
 
 
 #searchbar {
