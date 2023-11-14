@@ -126,6 +126,17 @@ header {
     width: 500px; 
     height: 40px;
     padding-left: 20px;
+    border: 2px solid;
+    border-color: black;
+}
+
+#SearchButton {
+    margin-left: -65px;
+    padding: 8px;
+    background-color: rgb(21, 21, 122);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 @media (max-width: 769px) {
@@ -154,7 +165,7 @@ header {
     min-height: 400px; 
     max-width: 500px; 
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
