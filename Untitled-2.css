@@ -16,7 +16,7 @@ body {
 
 header {
     display: flex;
-    height: 100px;
+    height: 70px;
     background-color: ivory;
     border-bottom: 3px solid;
     border-color: rgb(0, 0, 0);
@@ -25,10 +25,11 @@ header {
 }
 
 #navbarlist {
-    height: 100px;
+    height: 70px;
     margin-top: 0;
     display: flex;
     align-items: center;
+    margin-left: 40px;
 }
 
 #navbarlist > li {
@@ -53,7 +54,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 #accountlinks {
@@ -150,11 +151,12 @@ header {
     align-items: center;
     background-color: rgb(21, 21, 122);
     margin: 0 15px;
-    min-height: 200px; 
-    max-width: 300px; 
+    min-height: 400px; 
+    max-width: 500px; 
     color: white;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
+
 
 
 footer {
@@ -176,6 +178,7 @@ footer {
     width: 100%; 
     padding: 0 20px; 
     color: white;
+    margin-top: -80px;
 }
 
 .footerlists1, .footerlists2, .footerlists3 {
