@@ -222,8 +222,7 @@ header {
 #box1, #box2, #box3 {
     flex-grow: 1;
     align-items: center;
-    background-color: rgb(21, 21, 122);
-    margin: 0 15px;
+    background-color: rgb(21, 21, 122)
     min-height: 400px; 
     max-width: 500px; 
     color: white;
