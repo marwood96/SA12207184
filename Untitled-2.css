@@ -56,6 +56,7 @@ header {
     margin-right: 40px;
 }
 
+
 #accountlinks {
     display: flex;
     list-style-type: none;
@@ -80,10 +81,57 @@ header {
 
 }
 
+#mobileaccount {
+    display: none; 
+}
+
+@media (max-width: 769px) {
+    .account {
+        display: none;
+    }
+
+    #mobileaccount {
+        display: block; 
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    #mobilelogin {
+        display: block; 
+        position: absolute;
+        right: 5px;
+        list-style-type: none;
+        background-color: white;
+        text-decoration: none;
+        color: rgb(21, 21, 122);
+    }
+
+    #mobilelogin > li {
+        font-size: 25px;
+        padding: 0px 15px 0px 15px;
+        text-decoration: none;
+        color: rgb(21, 21, 122);
+        border: 2px solid;
+        border-color: black;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+#mobilelogin {
+    display: none;
+    position: absolute;
+}
+
+
+#mobilelogin.active {
+    display: block;
+}
+
 
 #mobilemenu {
     display: none;
 }
+
 
 
 @media (max-width: 769px) {
@@ -189,6 +237,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 769px) {
@@ -196,6 +245,7 @@ header {
         margin-left: 0px;
         padding: 5px;
         margin-left: 10px;
+        margin-bottom: 15px;
 
     }
 }
@@ -211,6 +261,8 @@ header {
 
 #content {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%; 
     margin: 0 auto;
@@ -222,14 +274,20 @@ header {
 #box1, #box2, #box3 {
     flex-grow: 1;
     align-items: center;
-    background-color: rgb(21, 21, 122)
+    background-color: rgb(21, 21, 122);
     min-height: 400px; 
     max-width: 500px; 
     color: white;
     margin-bottom: 50px;
 }
 
-/* Full-width input fields */
+@media screen and (max-width: 800px) {
+    #content {
+      flex-direction: column;
+      padding: 0px;
+    }
+  }
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -249,7 +307,6 @@ input[type=text], input[type=password] {
     margin-bottom: 25px;
   }
   
-  /* Set a style for all buttons */
   #button1 {
     background-color: #04AA6D;
     color: white;
@@ -265,31 +322,29 @@ input[type=text], input[type=password] {
     opacity:1;
   }
   
-  /* Extra styles for the cancel button */
   .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
   }
   
-  /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
   }
   
-  /* Add padding to container elements */
+
   .container {
     padding: 16px;
   }
   
-  /* Clear floats */
+
   .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
   
-  /* Change styles for cancel button and signup button on extra small screens */
+ 
   @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
       width: 100%;

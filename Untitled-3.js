@@ -8,3 +8,10 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('userIcon').addEventListener('click', function(event) {
+        event.preventDefault();
+        var dropdown = document.getElementById('mobilelogin');
+        dropdown.classList.toggle('active');
+    });
+});
