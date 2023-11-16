@@ -14,6 +14,13 @@ body {
 }
 
 
+
+
+
+
+
+/* ---------- HEADER/NAVBAR ----------- */
+
 header {
     display: flex;
     height: 70px;
@@ -181,6 +188,14 @@ header {
 
 }
 
+
+
+
+
+
+
+/*--------------- HOME PAGE ------------- */
+
 #home {
     margin: 0 auto;
     width: 100%;
@@ -287,7 +302,15 @@ header {
       flex-direction: column;
       padding: 0px;
     }
-  }
+ }
+
+
+
+
+
+
+
+ /* -------------- LOGIN/REGISTER PAGE --------------- */
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -352,6 +375,26 @@ input[type=text], input[type=password] {
     }
   }
 
+
+
+
+/* -------------- PROFILE PAGE ------------- */
+
+#profilecontainer {
+    display: flex;
+    height: 1000px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+/* -------------- FOOTER --------------- */
 
   
 footer {
