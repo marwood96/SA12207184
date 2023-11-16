@@ -353,9 +353,7 @@ input[type=text], input[type=password] {
   }
 
 
-
-
-
+  
 footer {
     height: 300px;
     width: 100%;
@@ -375,7 +373,6 @@ footer {
     width: 100%; 
     padding: 0 20px; 
     color: white;
-    margin-top: -80px;
 }
 
 .footerlists1, .footerlists2, .footerlists3 {
