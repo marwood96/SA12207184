@@ -229,7 +229,7 @@ header {
 
 @media (max-width: 769px) {
     #banner1 {
-        min-height: 25vh; 
+        min-height: 20vh; 
         background-image: url('Images/HomeBannerSmall.png');
         background-size: contain;
     }
