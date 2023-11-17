@@ -276,6 +276,10 @@ header {
         margin-bottom: 40px;
 
     }
+    
+    #belowbanner {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 769px) {
