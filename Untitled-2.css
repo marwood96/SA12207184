@@ -22,11 +22,6 @@ body {
 }
 
 
-
-
-
-
-
 /* ---------- HEADER/NAVBAR ----------- */
 
 header {
@@ -94,7 +89,6 @@ header {
 
 .dropdown-menu {
     position: absolute;
-    left: -110px;
     right: 0;
     width: 220px;
     display: none;
@@ -113,51 +107,9 @@ header {
     display: none; 
 }
 
-@media (max-width: 769px) {
-
-
-    #mobileaccount {
-        display: block; 
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-
-    #mobilelogin {
-        display: block; 
-        position: absolute;
-        right: 5px;
-        list-style-type: none;
-        background-color: white;
-        text-decoration: none;
-        color: rgb(21, 21, 122);
-    }
-
-    #mobilelogin > li {
-        font-size: 25px;
-        padding: 0px 15px 0px 15px;
-        text-decoration: none;
-        color: rgb(21, 21, 122);
-        border: 2px solid;
-        border-color: black;
-        padding: 10px 10px 10px 10px;
-    }
-}
-
-#mobilelogin {
-    display: none;
-    position: absolute;
-}
-
-
-#mobilelogin.active {
-    display: block;
-}
-
-
 #mobilemenu {
     display: none;
 }
-
 
 
 @media (max-width: 769px) {
@@ -206,23 +158,30 @@ header {
 
 }
 
-
-.account-icon {
-    display: none; /* Hide the icon by default */
-}
-
 .account-text {
-    display: inline; /* Or 'block', depending on your layout needs */
+    display: block; 
 }
 
-/* Media query for small screens */
+#usericon {
+    display: none;
+}
+
 @media (max-width: 769px) {
-    .account-icon {
-        display: block; /* Show the icon on small screens */
-    }
+
 
     .account-text {
-        display: none; /* Hide the text on small screens */
+        display: none; 
+    }
+
+    #usericon {
+        display: block;
+        width: 40%;
+        color: rgb(21, 21, 122);
+    }
+
+    .account {
+        margin-right: 30px; /* Adjust this value as needed */
+        justify-content: flex-end;
     }
 }
 
