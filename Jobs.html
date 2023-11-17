@@ -30,17 +30,28 @@
     </nav>
     <div class="account">
         <ul id="accountlinks">
-            <li><a href="Login.html" id="loginpage">Login</a></li>
-            <li><a href="Login.html" id="loginpage">Register</a></li>
+            <li>
+                <a href="#" id="accountLink">Account</a>
+                <div class="dropdown-menu" id="accountDropdown">
+                    <form id="loginForm">
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <button type="submit">Login</button>
+                        <button type="button" onclick="document.getElementById('loginForm').style.display='none';document.getElementById('registerForm').style.display='block';">Register</button>
+                    </form>
+                    <form id="registerForm" style="display:none">
+                        <h2>Register</h2>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <button type="submit">Register</button>
+                        <button type="button" onclick="document.getElementById('registerForm').style.display='none';document.getElementById('loginForm').style.display='block';">Login</button>
+                    </form>
+                </div>
+            </li>
         </ul>
     </div>
-    <div id="mobileaccount">
-        <a href="#" id="userIcon" style="font-size: 35px;">👤</a> 
-        <ul id="mobilelogin">
-            <li><a href="Login.html">Login</a></li>
-            <li><a href="Register.html">Register</a></li>
-        </ul>
-    </div>
+    <!-- Other elements -->
 </header>
 
 

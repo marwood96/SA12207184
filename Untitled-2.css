@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ img {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 
 body {
     margin: 0px;
@@ -67,7 +69,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 200px;
 }
 
 
@@ -80,19 +82,31 @@ header {
     font-size: 22px;
 }
 
-#accountlinks > li {
-    border-right: 1px solid #000; 
-    padding: 0 15px; 
+#accountlinks li {
+    position: relative;
+    display: inline-block;
 }
 
-#accountlinks > li:last-child {
-    border-right: none;
+#accountlinks li:hover .dropdown-menu {
+    display: block;
+    z-index: 100; /* High z-index to ensure visibility */
 }
 
-#accountlinks > li > a {
-    text-decoration: none;
-    color: rgb(21, 21, 122);
+.dropdown-menu {
+    position: absolute;
+    left: -110px;
+    right: 0;
+    width: 220px;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
 
+/* Adjust this as necessary */
+#accountDropdown {
+    top: 100%;
 }
 
 #mobileaccount {
@@ -100,9 +114,7 @@ header {
 }
 
 @media (max-width: 769px) {
-    .account {
-        display: none;
-    }
+
 
     #mobileaccount {
         display: block; 
@@ -192,6 +204,26 @@ header {
     }
     
 
+}
+
+
+.account-icon {
+    display: none; /* Hide the icon by default */
+}
+
+.account-text {
+    display: inline; /* Or 'block', depending on your layout needs */
+}
+
+/* Media query for small screens */
+@media (max-width: 769px) {
+    .account-icon {
+        display: block; /* Show the icon on small screens */
+    }
+
+    .account-text {
+        display: none; /* Hide the text on small screens */
+    }
 }
 
 
