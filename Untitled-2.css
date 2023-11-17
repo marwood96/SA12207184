@@ -229,7 +229,7 @@ header {
 
 @media (max-width: 769px) {
     #banner1 {
-        min-height: 20vh; 
+        min-height: 18vh; 
         background-image: url('Images/HomeBannerSmall.png');
         background-size: contain;
     }
@@ -274,7 +274,7 @@ header {
         margin-left: 0px;
         padding: 5px;
         margin-left: 10px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
 
     }
 }
@@ -284,6 +284,7 @@ header {
         margin-left: 20px;
         width: 200px;
         height: 20px;
+        margin-bottom: 16px;
     }
 }
 
