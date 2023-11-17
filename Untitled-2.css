@@ -93,7 +93,7 @@ header {
 .dropdown-menu {
     position: absolute;
     right: 0;
-    width: 220px;
+    width: 300px;
     display: none;
     background-color: #f9f9f9;
     min-width: 220px;
@@ -104,6 +104,7 @@ header {
 
 #accountDropdown {
     top: 100%;
+    width: 300px;
 }
 
 #mobileaccount {

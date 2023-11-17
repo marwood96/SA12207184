@@ -41,6 +41,14 @@
                         <h2>Login</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
+                        <div>
+                            <input type="radio" id="employerRadio" name="userType" value="employer">
+                            <label for="employerRadio">Login as a Business</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="jobseekerRadio" name="userType" value="jobseeker">
+                            <label for="jobseekerRadio">Login as a Student</label>
+                        </div>
                         <button type="submit">Login</button>
                         <button type="button" onclick="document.getElementById('loginForm').style.display='none';document.getElementById('registerForm').style.display='block';">Register</button>
                     </form>
@@ -48,6 +56,14 @@
                         <h2>Register</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
+                        <div>
+                            <input type="radio" id="employerRadio" name="userType" value="employer">
+                            <label for="employerRadio">Register as a Business</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="jobseekerRadio" name="userType" value="jobseeker">
+                            <label for="jobseekerRadio">Register as a Student</label>
+                        </div>
                         <button type="submit">Register</button>
                         <button type="button" onclick="document.getElementById('registerForm').style.display='none';document.getElementById('loginForm').style.display='block';">Login</button>
                     </form>
