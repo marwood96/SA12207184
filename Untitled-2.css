@@ -48,6 +48,7 @@ header {
     font-size: 22px;
     border-right: 1px solid #000; 
     padding: 0 15px; 
+    color: rgb(21, 21, 122);
 }
 
 
@@ -64,7 +65,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 50px;
 }
 
 
@@ -75,16 +76,18 @@ header {
     margin: 0;
     text-decoration: none;
     font-size: 22px;
+    color: rgb(21, 21, 122);
 }
 
 #accountlinks li {
     position: relative;
     display: inline-block;
+    color: rgb(21, 21, 122);
 }
 
 #accountlinks li:hover .dropdown-menu {
     display: block;
-    z-index: 100; /* High z-index to ensure visibility */
+    z-index: 100; 
 }
 
 .dropdown-menu {
@@ -98,7 +101,7 @@ header {
     padding: 12px 16px;
 }
 
-/* Adjust this as necessary */
+
 #accountDropdown {
     top: 100%;
 }
@@ -128,6 +131,7 @@ header {
         border-color: black;
         border-radius: 3px;
         background-color: white;
+        color: rgb(21, 21, 122);
     }
 
     #hamburgerlist {
@@ -160,6 +164,15 @@ header {
 
 .account-text {
     display: block; 
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: black;
+    padding: 0 15px 0 15px; 
+}
+
+#accountLink {
+    color: rgb(21, 21, 122);
+    text-decoration: none;
 }
 
 #usericon {
@@ -175,12 +188,13 @@ header {
 
     #usericon {
         display: block;
-        width: 40%;
         color: rgb(21, 21, 122);
+        font-size: 30px;
+        margin-top: 10px;
     }
 
     .account {
-        margin-right: 30px; /* Adjust this value as needed */
+        margin-right: 30px; 
         justify-content: flex-end;
     }
 }
@@ -201,7 +215,7 @@ header {
 
 #banner1 {
     display: flex;
-    min-height: 60vh;
+    min-height: 50vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -250,7 +264,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 
 @media (max-width: 769px) {
@@ -258,7 +272,7 @@ header {
         margin-left: 0px;
         padding: 5px;
         margin-left: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
 
     }
 }
