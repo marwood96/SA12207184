@@ -351,7 +351,7 @@ input[type="text"], input[type="password"] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: rgb(21, 21, 122);
     color: white;
     padding: 15px 20px;
     margin: 10px 0;
@@ -361,7 +361,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: rgb(21, 21, 122);;
 }
 
 
