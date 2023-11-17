@@ -8,3 +8,21 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 
+document.getElementById('usericon').addEventListener('click', function() {
+    var dropdown = document.getElementById('accountDropdown');
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
+    }
+});
+
+
+document.getElementsByClassName('account-text').addEventListener('click', function() {
+    var dropdown = document.getElementById('accountDropdown');
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
+    }
+});

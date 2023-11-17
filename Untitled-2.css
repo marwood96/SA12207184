@@ -9,7 +9,6 @@
 img {
     width: 100%; 
     height: 100%; 
-    object-fit: contain;
 }
 
 
@@ -221,18 +220,21 @@ header {
     justify-content: center;
     align-items: center;
     background-image: url("Images/HomeBanner2.png");
-    background-size: cover;
+    background-size: 100% 100%;
     border-bottom: 3px solid;
     border-color: rgb(21, 21, 122);
+    background-position: center;
 }
 
 
 @media (max-width: 769px) {
     #banner1 {
-        min-height: 18vh; 
+        min-height: 25vh; 
         background-image: url('Images/HomeBannerSmall.png');
-        background-size: contain;
+        background-size: 100% 100%;
+        background-position: center
     }
+
 }
 
 #belowbanner {
@@ -273,6 +275,7 @@ header {
     #SearchButton {
         padding: 5px;
         margin-left: 10px;
+        margin-bottom: 30px;
 
     }
     
