@@ -231,6 +231,7 @@ header {
     #banner1 {
         min-height: 25vh; 
         background-image: url('Images/HomeBannerSmall.png');
+        background-size: contain;
     }
 }
 
