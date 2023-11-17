@@ -273,13 +273,10 @@ header {
     #SearchButton {
         padding: 5px;
         margin-left: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 43px;
 
     }
     
-    #belowbanner {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 769px) {
@@ -287,7 +284,7 @@ header {
         margin-left: 20px;
         width: 200px;
         height: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }
 
