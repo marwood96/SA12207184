@@ -440,7 +440,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     height: 70%;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     padding: 0;
     border-radius: 10px;
@@ -461,6 +461,15 @@ button:hover {
     flex: 2;
     flex-basis: 500px; 
     margin: 2%;
+    color: rgb(21, 21, 122);
+}
+
+#info > ul {
+    font-size: 20px;
+}
+
+#info > ul > li {
+    margin-left: 25px;
 }
 
 
@@ -470,6 +479,7 @@ button:hover {
     flex-wrap: wrap;
     background-color: rgb(208, 208, 218, 0.5);
     border-radius: 15px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
