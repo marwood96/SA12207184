@@ -53,3 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
         profileContainer1.style.display = 'block';
     });
 });
+
+
+document.getElementById('toggleFiltersButton').addEventListener('click', function() {
+    var filterForm = document.getElementById('filterForm');
+    filterForm.classList.toggle('show'); // Toggle the 'show' class
+});
