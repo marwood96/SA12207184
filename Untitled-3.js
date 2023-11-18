@@ -18,7 +18,7 @@ document.getElementById('usericon').addEventListener('click', function() {
 });
 
 
-document.getElementsByClassName('account-text').addEventListener('click', function() {
+document.querySelector('account-text').addEventListener('click', function() {
     var dropdown = document.getElementById('accountDropdown');
     if (dropdown.style.display === 'block') {
         dropdown.style.display = 'none';
