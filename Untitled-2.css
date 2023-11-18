@@ -13,7 +13,6 @@ img {
 
 
 body {
-    margin: 0px;
     background-color: rgb(255, 255, 255);
     font-family: 'EB Garamond', serif;
 }
@@ -113,8 +112,41 @@ header {
     display: none;
 }
 
+.account-text {
+    display: block; 
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: black;
+    padding: 0 15px 0 15px; 
+}
+
+#accountLink {
+    color: rgb(21, 21, 122);
+    text-decoration: none;
+}
+
+#usericon {
+    display: none;
+}
 
 @media (max-width: 769px) {
+
+    .account-text {
+        display: none; 
+    }
+
+    #usericon {
+        display: block;
+        color: rgb(21, 21, 122);
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .account {
+        margin-right: 30px; 
+        justify-content: flex-end;
+    }
+
     #navbarlist {
         display: none;
     }
@@ -157,45 +189,6 @@ header {
         text-decoration: none;
         color: rgb(21, 21, 122);
     }
-    
-
-}
-
-.account-text {
-    display: block; 
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-color: black;
-    padding: 0 15px 0 15px; 
-}
-
-#accountLink {
-    color: rgb(21, 21, 122);
-    text-decoration: none;
-}
-
-#usericon {
-    display: none;
-}
-
-@media (max-width: 769px) {
-
-
-    .account-text {
-        display: none; 
-    }
-
-    #usericon {
-        display: block;
-        color: rgb(21, 21, 122);
-        font-size: 30px;
-        margin-top: 10px;
-    }
-
-    .account {
-        margin-right: 30px; 
-        justify-content: flex-end;
-    }
 }
 
 
@@ -221,16 +214,6 @@ header {
     background-position: center;
 }
 
-
-@media (max-width: 769px) {
-    #banner1 {
-        min-height: 25vh; 
-        background-image: url('Images/HomeBannerSmall.png');
-        background-size: 100% 100%;
-        background-position: center
-    }
-
-}
 
 #belowbanner {
     display: flex;
@@ -266,24 +249,6 @@ header {
     margin-bottom: 11px;
 }
 
-@media (max-width: 769px) {
-    #SearchButton {
-        padding: 5px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-
-    }
-    
-}
-
-@media (max-width: 769px) {
-    #searchbar {
-        margin-left: 20px;
-        width: 200px;
-        height: 20px;
-        margin-bottom: 30px;
-    }
-}
 
 #trending {
     margin-top: 50px;
@@ -308,6 +273,13 @@ header {
     box-sizing: border-box;
 }
 
+#content img {
+    width: 500px;  /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    object-fit: cover; /* This will maintain the aspect ratio */
+}
+
+
 #box1, #box2, #box3 {
     flex-grow: 1;
     text-align: center;
@@ -319,20 +291,59 @@ header {
     margin-bottom: 100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 769px) {
     #content {
       flex-direction: column;
       padding: 0px;
       max-width: 390px;
     }
 
+    #banner1 {
+        min-height: 25vh; 
+        background-image: url('Images/HomeBannerSmall.png');
+        background-size: 100% 100%;
+        background-position: center
+    }
+
     #box1, #box2, #box3 {
         margin-bottom: 100px;
 
     }
-    
+
+    #boxshadow {
+        margin-bottom: 30px;
+    }
+        
     #content h1 {
         font-size: 24px;
+    }
+
+    #content {
+        max-width: 500px;
+      }
+
+    #content img {
+    padding: 0px;
+    max-width: 390px;
+    }
+
+    #box1, #box2, #box3 {
+        margin-bottom: 10px;
+
+    }
+
+    #SearchButton {
+        padding: 5px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+
+    }
+    
+    #searchbar {
+        margin-left: 20px;
+        width: 200px;
+        height: 20px;
+        margin-bottom: 30px;
     }
  }
 
@@ -348,17 +359,8 @@ header {
 
  }
 
- @media screen and (max-width: 769px) {
-    #content {
-      max-width: 500px;
-    }
 
-    #box1, #box2, #box3 {
-        margin-bottom: 10px;
 
-    }
-
- }
 
 
 
@@ -413,15 +415,25 @@ button:hover {
     background-color: white;
 }
 
-#profilecontainer {
+#switchbuttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilecontainer, #profilecontainer1 {
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: 70%;
     width: 70%;
     margin: 0 auto;
     padding: 0;
     border-radius: 10px;
 }
+
 
 #icon {
     flex: 1;
@@ -430,6 +442,7 @@ button:hover {
     margin: 2%;
     border: 3px solid;
     border-color: black;
+    border-radius: 8px;
 }
 
 #info {
@@ -439,18 +452,11 @@ button:hover {
 }
 
 
-@media (min-width: 1024px) {
-    #icon {
-        max-width: 400px; 
-    }
-}
-
-
 #topsection {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(208, 208, 218, 0.5);
     border-radius: 15px;
 }
 
@@ -460,7 +466,11 @@ button:hover {
     }
 }
 
-
+@media (min-width: 1024px) {
+    #icon {
+        max-width: 400px; 
+    }
+}
 
 /* -------------- FOOTER --------------- */
 
@@ -468,8 +478,6 @@ button:hover {
 footer {
     height: 300px;
     width: 100%;
-    margin-top: auto; /* IMPORTANT!! After hours of troubleshooting, I found for some reason this stops the footer from being at a set height in the page, 
-                         e.g keeps it attached to the bottom of the page rather than new content being placed after it; and unfortunately I can't explain why */
     padding: 0;
     display: flex;
     border-top: 5px solid;
