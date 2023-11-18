@@ -361,11 +361,13 @@ header {
 
  @media screen and (max-width: 500px) {
     #content {
-      max-width: 500px;
+        flex-direction: column;
+        padding: 0px;
+        max-width: 390px;
     }
 
     #box1, #box2, #box3 {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
 
     }
 
