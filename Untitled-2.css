@@ -525,6 +525,9 @@ button:hover {
 }
 
 #jobdetails {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     font-size: 22px;
 }
 
@@ -573,14 +576,6 @@ button:hover {
 
 
 @media (max-width: 1024px) {
-
-    #jobspage {
-        width: 100%;
-    }
-
-    #jobslist {
-        width: auto;
-    }
 
     #jobimg img {
         max-width: 200px;
