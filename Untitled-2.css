@@ -498,7 +498,8 @@ button:hover {
 @media (min-width: 769px) {
     #icon {
         max-width: 400px; 
-        margin: 0%;
+        margin: 0;
+        justify-content: center;
     }
 }
 
