@@ -13,7 +13,7 @@ img {
 
 
 body {
-    background-color:ivory;
+    background-color: rgb(165, 236, 236, .2);
     font-family: 'EB Garamond', serif;
 }
 
@@ -25,7 +25,7 @@ header {
     display: flex;
     height: 70px;
     background-color: white;
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
     border-color: rgb(0, 0, 0);
     margin: 0 auto;
     justify-content: space-between;
@@ -198,7 +198,7 @@ header {
 #home {
     margin: 0 auto;
     width: 100%;
-    background-color: ivory;
+    background-color: white;
 }
 
 #banner1 {
@@ -223,7 +223,7 @@ header {
     width: 100%;
     background-color: rgb(21, 21, 122);
     color: white;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
     border-color: black;
 }
 
@@ -268,9 +268,9 @@ header {
     width: 100%; 
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 100px;
     padding: 0 20px;
     box-sizing: border-box;
+    
 }
 
 #content img {
@@ -287,8 +287,8 @@ header {
     justify-content: center;
     min-height: 400px; 
     max-width: 500px; 
-    color: rgb(21, 21, 122);;
-    margin-bottom: 100px;
+    color: rgb(21, 21, 122);
+    
 }
 
 @media screen and (max-width: 769px) {
@@ -425,13 +425,12 @@ button:hover {
 /* -------------- PROFILE PAGE ------------- */
 
 #profilepage {
-    background-color: ivory;
+    background-color: white;
 }
 
 #switchbuttons {
     display: flex;
     margin: 0 auto;
-    margin-top: 50px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -440,11 +439,13 @@ button:hover {
 #profilecontainer, #profilecontainer1 {
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: auto;
     width: 90%;
     margin: 0 auto;
     padding: 0;
     border-radius: 10px;
+    border: 1px solid;
+    border-color: black;
 }
 
 
@@ -453,9 +454,9 @@ button:hover {
     flex-basis: 250px; 
     max-width: 300px; 
     margin: 2%;
-    border: 3px solid;
+    border: 2px solid;
     border-color: black;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 #info {
@@ -475,17 +476,20 @@ button:hover {
 
 
 #topsection {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(208, 208, 218, 0.5);
+    background-color: ivory;
     border-radius: 15px;
-    margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
     #topsection {
         flex-direction: column; 
+        
+    }
+
+    #icon {
+        margin-left: 60px; 
     }
 }
 
@@ -511,14 +515,15 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    background-color: white;
 }
 
 #jobslist {
-    width: 60%;
+    width: 80%;
 }
 
 #filterbar {
-    height: fit-content;
+    min-height: 100vh;
     width: 15%;
     background-color: ivory;
     color: black;
@@ -530,21 +535,22 @@ button:hover {
     border-left: 3px solid;
     border-color: black;
     border-radius: 4px;
-    background-color: white;
     color: rgb(21, 21, 122);
     font-size: 20px;
+    overflow-y: auto;
 }
 
 #joblisting {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    border: 4px solid;
+    background-color: ivory;
+    border: 1px solid;
     border-radius: 10px;
-    border-color: rgb(21, 21, 122);
+    border-color: black;
     color: rgb(21, 21, 122);
     margin-top: 20px;
     margin-left: 20px;
+    padding: 2px;
 }
 
 #jobdetails {
@@ -567,6 +573,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    background-color: white;
 }
 
 .pagination a {
@@ -609,6 +616,7 @@ button:hover {
         display: block; 
         width: 90%; 
         margin-left: 0; 
+        min-height: 0vh;
     }
 
     #jobslist {
@@ -641,13 +649,18 @@ button:hover {
 
 /* -------------- FOOTER --------------- */
 
+.spacer {
+    height: 100px;
+    background-color: white;
+}
+
   
 footer {
     height: 300px;
     width: 100%;
     padding: 0;
     display: flex;
-    border-top: 5px solid;
+    border-top: 2px solid;
     border-color: black;
     background-color: rgb(21, 21, 122);
 }
