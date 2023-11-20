@@ -514,25 +514,37 @@ button:hover {
 }
 
 #jobslist {
-    width: 100%;
+    width: 60%;
 }
 
 #filterbar {
+    height: fit-content;
     width: 15%;
     background-color: ivory;
     color: black;
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    border-color: black;
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(21, 21, 122);
+    font-size: 20px;
 }
 
 #joblisting {
     display: flex;
     flex-direction: row;
     background-color: white;
-    border: 2px solid;
+    border: 4px solid;
+    border-radius: 10px;
     border-color: rgb(21, 21, 122);
     color: rgb(21, 21, 122);
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 #jobdetails {
@@ -544,6 +556,29 @@ button:hover {
 
 #toggleFiltersButton {
     display: none; 
+}
+
+
+.pagination {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.pagination a {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: rgb(21, 21, 122);;
+    color: white;
 }
 
 
