@@ -13,7 +13,7 @@ img {
 
 
 body {
-    background-color: rgb(165, 236, 236, .2);
+    background-color: white;
     font-family: 'EB Garamond', serif;
 }
 
@@ -180,7 +180,7 @@ header {
 
     #hamburgerlist > li {
         font-size: 25px;
-        padding: 0px 15px 0px 15px;
+        padding: 10px 15px 10px 15px;
         text-decoration: none;
         color: rgb(21, 21, 122);
         border-top: 2px solid;
@@ -663,6 +663,25 @@ button:hover {
         max-width: 200px;
     }
 
+}
+
+
+/* -------------- CONTACT PAGE --------------- */
+
+#contactcontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#contactform {
+    height: 700px;
+    width: 70%;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: ivory;
 }
 
 /* -------------- FOOTER --------------- */
