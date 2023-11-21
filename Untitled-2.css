@@ -104,6 +104,10 @@ header {
     width: 300px;
 }
 
+#logo {
+    margin-right: 220px;
+}
+
 #mobileaccount {
     display: none; 
 }
@@ -134,6 +138,7 @@ header {
     .account-text {
         display: none; 
     }
+
 
     #usericon {
         display: block;
@@ -180,7 +185,10 @@ header {
         color: rgb(21, 21, 122);
         border-top: 2px solid;
         border-color: black;
-        padding: 10px 0px 10px 0px;
+    }
+
+    #hamburgerlist > li:last-child {
+        padding-right: 0;
     }
 
     #hamburgerlist > li > a {
@@ -189,6 +197,13 @@ header {
         text-decoration: none;
         color: rgb(21, 21, 122);
     }
+}
+
+@media (max-width: 825px) {
+    #logo {
+        margin-right: 0px;
+    }
+    
 }
 
 
@@ -297,6 +312,7 @@ header {
       padding: 0px;
       max-width: 390px;
     }
+    
 
     #banner1 {
         min-height: 40vh; 
@@ -319,9 +335,6 @@ header {
         font-size: 24px;
     }
 
-    #content {
-        max-width: 500px;
-      }
 
     #content img {
     padding: 0px;
@@ -342,6 +355,7 @@ header {
         height: 20px;
         margin-bottom: 30px;
     }
+
  }
 
  @media screen and (max-width: 1050px) {
@@ -538,7 +552,7 @@ button:hover {
     border-bottom: 3px solid;
     border-left: 3px solid;
     border-color: black;
-    border-radius: 4px;
+    border-radius: 3px;
     color: rgb(21, 21, 122);
     font-size: 20px;
     overflow-y: auto;
