@@ -32,10 +32,11 @@ document.querySelector('.account-text').addEventListener('click', function() {
 
 
 // ----------- SWITCH BETWEEN EMPLOYEE AND EMPLOYER VIEW FUNCTIONS -------------
-
-
 // Will recieve harmless TypeError message in debug console, the error message is caused by the relevent elements (E.g,'employeeview' and 'employerview') not existing on any pages other than the Profile page.
 // Tried to place it in the dedicated inline-script tag, but caused the function to no longer run; unsure why.
+
+
+// ----------- PROFILE PAGE: -------------
 document.addEventListener('DOMContentLoaded', function () {
     
     var nologonButton = document.getElementById('nologon')
@@ -65,7 +66,33 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.getElementById('toggleFiltersButton').addEventListener('click', function() {
-    var filterForm = document.getElementById('filterForm');
-    filterForm.classList.toggle('show'); // Toggle the 'show' class
+// ----------- JOBS PAGE -------------
+document.addEventListener('DOMContentLoaded', function () {
+    
+    var employeeViewButton = document.getElementById('employeeviewJobs');
+    var employerViewButton = document.getElementById('employerviewJobs');
+    var jobspage = document.getElementById('jobspage');
+    var studentsPage = document.getElementById('studentsPage');
+    var toggleFiltersButtonJobs = document.getElementById('toggleFiltersButtonJobs');
+    var filterFormJobs = document.getElementById('filterFormJobs');
+    var toggleFiltersButtonStudents = document.getElementById('toggleFiltersButtonStudents');
+    var filterFormStudents = document.getElementById('filterFormStudents');
+
+    toggleFiltersButtonJobs.addEventListener('click', function() {
+        filterFormJobs.classList.toggle('show'); // Toggle for jobspage
+    });
+
+    toggleFiltersButtonStudents.addEventListener('click', function() {
+        filterFormStudents.classList.toggle('show'); // Toggle for studentsPage
+    });
+
+    employeeViewButton.addEventListener('click', function() {
+        jobspage.style.display = 'flex';
+        studentsPage.style.display = 'none';
+    });
+
+    employerViewButton.addEventListener('click', function() {
+        jobspage.style.display = 'none';
+        studentsPage.style.display = 'flex';
+    });
 });

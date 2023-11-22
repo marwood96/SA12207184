@@ -78,11 +78,17 @@
     </div>
 </header>
 
+<div id="switchbuttons">
+    <button id="employeeviewJobs" style="margin-right: 10px;">Default View</button>
+    <button id="employerviewJobs" style="margin-left: 10px;">Business View</button>
+</div>
+
+<!-- STUDENTS VIEW PAGE -->
 
 <div id="jobspage">
     <div id="filterbar">
-        <button id="toggleFiltersButton">Show Filters</button>
-        <form id="filterForm" class="hidden">
+        <button id="toggleFiltersButtonJobs">Show Filters</button>
+        <form id="filterFormJobs" class="hidden">
             <h3>Filter Jobs</h3>
             <br>
 
@@ -197,6 +203,130 @@
     </div>
 </div>
 
+
+
+<!-- BUSINESS' VIEW PAGE -->
+
+<div id="studentsPage">
+    <div id="filterbar">
+        <button id="toggleFiltersButtonStudents">Show Filters</button>
+        <form id="filterFormStudents" class="hidden">
+            <h3>Filter Students</h3>
+            <br>
+
+            <label for="SearchJob">Name:</label>
+            <input type="text" id="searchJob" name="SearchJob">
+            <br>
+    
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+            <br>
+    
+            <label for="minSalary">Key Skills:</label>
+            <br>
+            <input type="number" id="minSalary" name="minSalary">
+            <br>
+    
+            <label for="jobType">Job Type:</label>
+            <br>
+            <select id="jobType" name="jobType">
+                <option value="all">All</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+            </select>
+            <br><br>
+
+            <button type="button">Apply Filters</button>
+        </form>
+    </div>
+    <div id="studentslist">
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+        <div class="joblisting">
+            <div id="jobimg" style="height: 200px; margin-right: 40px;">
+                <img src="Images/ProfilePicture.png">
+            </div>
+            <div class="jobdetails">
+                <h2>John Smith</h2>
+                    <p><i>Computer Science Student</i></p>
+                    <P>Part Time, Temporary</p>
+                    <p style="text-align: right;">Contact</p>
+                    <br>
+                    <p>Python, JavaScript</p>
+                    <br>
+            </div>
+        </div>
+    </div>
+</div>
+
 <nav class="pagination">
     <a href="#">1</a>
     <a href="#">2</a>
@@ -204,9 +334,7 @@
     <a href="#">4</a>
     <a href="#">5</a>
     <a href="#">6</a>
-    <!-- Other page numbers -->
 </nav>
-
 
 
 <!--FOOTER SECTION-->

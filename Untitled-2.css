@@ -624,9 +624,7 @@ button:hover {
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
-    border-right: 3px solid;
-    border-bottom: 3px solid;
-    border-left: 3px solid;
+    border: 3px solid;
     border-color: black;
     border-radius: 3px;
     color: rgb(21, 21, 122);
@@ -656,7 +654,11 @@ button:hover {
     font-size: 22px;
 }
 
-#toggleFiltersButton {
+#toggleFiltersButtonJobs {
+    display: none; 
+}
+
+#toggleFiltersButtonStudents {
     display: none; 
 }
 
@@ -684,6 +686,19 @@ button:hover {
     color: white;
 }
 
+#studentsPage {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+#studentslist {
+    width: 80%;
+}
+
 
 @media (max-width: 768px) {
     #jobspage {
@@ -691,7 +706,12 @@ button:hover {
         align-items: center; 
     }
 
-    #toggleFiltersButton {
+    #studentsPage {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #toggleFiltersButtonJobs {
         display: block; 
         width: 100%; 
         padding: 15px 0; 
@@ -700,11 +720,20 @@ button:hover {
         margin-bottom: 10px; 
     }
 
-    #filterForm {
+    #toggleFiltersButtonStudents {
+        display: block; 
+        width: 100%; 
+        padding: 15px 0; 
+        background-color: rgb(21, 21, 122); 
+        color: white; 
+        margin-bottom: 10px; 
+    }
+
+    #filterFormJobs, #filterFormStudents {
         display: none; 
     }
 
-    #filterForm.show {
+    #filterFormJobs.show, #filterFormStudents.show {
         display: block; 
     }
 
@@ -717,6 +746,10 @@ button:hover {
 
     #jobslist {
         width: 100%; 
+    }
+
+    #studentslist {
+        width: 100%;
     }
 
     .joblisting {
