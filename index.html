@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>COM4003 SA1: 2207184</title>
   <link rel="stylesheet" href="Untitled-2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Imports font library used on website -->
 </head>
 <body>  
 
@@ -14,7 +14,7 @@
 <header>
     <nav>
         <div id="mobilemenu">
-            <div id="hamburger">☰</div>
+            <div id="hamburger">☰</div>  <!-- Responsive mobile navigation list, displays 'hamburger' icon at small window sizes -->
                 <ul id="hamburgerlist">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Jobs.html">Jobs</a></li>
@@ -22,25 +22,27 @@
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
         </div>
-        <ul id="navbarlist">
-            <li><a href="index.html">Home</a></li>
+        <ul id="navbarlist">  <!-- Default navigation list, displays navlist at larger window sizes -->
+            <li><a href="index.html">Home</a></li> 
             <li><a href="Jobs.html">Jobs</a></li>
             <li><a href="Profile.html">Profile</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="logo"> <img src="Images/Logo.png"> </div>
+    <div id="logo">
+        <img src="Images/Logo.png">
+    </div>
 
     <div class="account">
         <ul id="accountlinks">
             <li>
                 <a href="#" id="accountLink">
-                    <span class="account-text">Account</span> <!-- Account Link for large window sizes -->
+                    <span class="account-text">Account</span> <!-- Account/login Link for large window sizes -->
                     <i class="fas fa-user account-icon" id="usericon" aria-hidden="true"></i> <!-- User Icon for small window sizes -->
                 </a>
                 <div class="dropdown-menu" id="accountDropdown">
-                    <form id="loginForm">
+                    <form id="loginForm">       <!-- Dropdown menu for Login form -->
                         <h2>Login</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
@@ -55,7 +57,7 @@
                         <button type="submit">Login</button>
                         <button type="button" onclick="document.getElementById('loginForm').style.display='none';document.getElementById('registerForm').style.display='block';">Register</button>
                     </form>
-                    <form id="registerForm" style="display:none">
+                    <form id="registerForm" style="display:none">  <!-- Dropdown menu for Register form -->
                         <h2>Register</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
@@ -78,12 +80,12 @@
 
 
 <!--MAIN CONTENT SECTION-->
-<div id="home" style="display: block;">
+<div id="home">
     <div id="banner1">
         <div id="searchbox">
             <input type="text" id="searchbar" name="jobsearch" placeholder="   Find your dream job here...">    <!--SEARCH BAR IN BANNER-->
         </div>
-        <button id="SearchButton">Search</button>
+        <button id="SearchButton">Search</button>  <!-- Search button outside of searchbar div to allow for more independent style customisation -->
     </div>
     <div id="belowbanner">
         <div id="bbheading">
@@ -92,7 +94,7 @@
     </div>
     <h1 id="trending">Trending Jobs</h1>
     <div id="content">
-        <div id="boxshadow" style="background-color: ivory; padding: 20px; border-radius: 20px; border: 1px solid; border-color: rgb(0, 0, 0);">
+        <div id="boxshadow" style="background-color: ivory; padding: 20px; border-radius: 20px; border: 1px solid; border-color: rgb(0, 0, 0);">  <!-- Container to add background colour to all of box1, box2, box3 -->
             <div id="box1">
                 <img src="Images/engineering.jpg" style="border-radius: 20px;">
                 <h1>Engineering</h1>
@@ -101,9 +103,10 @@
                 <br>
                 <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ipsum dui, a auctor ante posuere in. Pellentesque tincidunt, diam at consequat blandit, velit quam mattis urna, nec faucibus nisi diam eget neque. 
                     Vestibulum ut tellus pellentesque, dapibus mauris id, tincidunt tellus. In accumsan diam in luctus rhoncus. Vestibulum eu arcu congue, faucibus tellus tristique, hendrerit purus. Etiam egestas elit sed faucibus malesuada. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc efficitur vestibulum tristique. Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.</p>
-                    <br>
-                    <hr>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc efficitur vestibulum tristique. Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.
+                </p>
+                <br>
+                <hr>
             </div>
         </div>
 
@@ -118,9 +121,10 @@
                 <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ipsum dui, a auctor ante posuere in. Pellentesque tincidunt, diam at consequat blandit, velit quam mattis urna, nec faucibus nisi diam eget neque. 
                     Vestibulum ut tellus pellentesque, dapibus mauris id, tincidunt tellus. In accumsan diam in luctus rhoncus. Vestibulum eu arcu congue, faucibus tellus tristique, hendrerit purus. Etiam egestas elit sed faucibus malesuada. 
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc efficitur vestibulum tristique. 
-                    Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.</p>
-                    <br>
-                    <hr>
+                    Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.
+                </p>
+                <br>
+                <hr>
             </div>
         </div>
 
@@ -134,9 +138,10 @@
                 <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ipsum dui, a auctor ante posuere in. Pellentesque tincidunt, diam at consequat blandit, velit quam mattis urna, nec faucibus nisi diam eget neque. 
                     Vestibulum ut tellus pellentesque, dapibus mauris id, tincidunt tellus. In accumsan diam in luctus rhoncus. Vestibulum eu arcu congue, faucibus tellus tristique, hendrerit purus. Etiam egestas elit sed faucibus malesuada. 
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc efficitur vestibulum tristique. 
-                    Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.</p>
-                    <br>
-                    <hr>
+                    Vestibulum nisi nunc, dictum ac maximus semper, sollicitudin non orci. Nullam non turpis nisl.
+                </p>
+                <br>
+                <hr>
             </div>
         </div>
     </div>

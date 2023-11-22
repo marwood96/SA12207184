@@ -38,18 +38,28 @@ document.querySelector('.account-text').addEventListener('click', function() {
 // Tried to place it in the dedicated inline-script tag, but caused the function to no longer run; unsure why.
 document.addEventListener('DOMContentLoaded', function () {
     
+    var nologonButton = document.getElementById('nologon')
     var employeeViewButton = document.getElementById('employeeview');
     var employerViewButton = document.getElementById('employerview');
     var profileContainer = document.getElementById('profilecontainer');
     var profileContainer1 = document.getElementById('profilecontainer1');
+    var accountform = document.getElementById('accountcontainer')
+
+    nologonButton.addEventListener('click', function() {
+        profileContainer.style.display = 'none';
+        profileContainer1.style.display = 'none';
+        accountform.style.display = 'flex';
+    });
 
     employeeViewButton.addEventListener('click', function() {
         profileContainer.style.display = 'block';
         profileContainer1.style.display = 'none';
+        accountform.style.display = 'none';
     });
 
     employerViewButton.addEventListener('click', function() {
         profileContainer.style.display = 'none';
+        accountform.style.display = 'none';
         profileContainer1.style.display = 'block';
     });
 });

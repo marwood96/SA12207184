@@ -306,6 +306,10 @@ header {
     
 }
 
+#boxshadow {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 @media screen and (max-width: 769px) {
     #content {
       flex-direction: column;
@@ -329,6 +333,7 @@ header {
 
     #boxshadow {
         margin-bottom: 30px;
+        
     }
         
     #content h1 {
@@ -395,6 +400,20 @@ header {
 
 
  /* -------------- LOGIN/REGISTER FORM --------------- */
+
+#mainloginForm {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    align-content: center;
+}
+
+#mainregisterForm {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    align-content: center;
+}
 
  #register {
     display: flex;
@@ -464,6 +483,7 @@ button:hover {
     border-radius: 10px;
     border: 1px solid;
     border-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -500,7 +520,37 @@ button:hover {
     border-radius: 15px;
 }
 
-@media (max-width: 768px) {
+
+#accountcontainer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+#accountform {
+    height: auto;
+    width: 70%;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: ivory;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: rgb(21, 21, 122);
+    padding-bottom: 30px;
+}
+
+.formsubmit {
+    width: 30%; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 769px) {
     #topsection {
         flex-direction: column; 
         
@@ -509,7 +559,15 @@ button:hover {
     #icon {
         margin-left: 60px; 
     }
+
+    .formsubmit {
+        width: 50%; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
+
+
 
 @media (min-width: 1024px) {
     #icon {
@@ -556,9 +614,10 @@ button:hover {
     color: rgb(21, 21, 122);
     font-size: 20px;
     overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#joblisting {
+.joblisting {
     display: flex;
     flex-direction: row;
     background-color: ivory;
@@ -569,9 +628,10 @@ button:hover {
     margin-top: 20px;
     margin-left: 20px;
     padding: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#jobdetails {
+.jobdetails {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -641,7 +701,7 @@ button:hover {
         width: 100%; 
     }
 
-    #joblisting {
+    .joblisting {
         margin-left: 0px;
     }
 }
@@ -668,7 +728,7 @@ button:hover {
 
 /* -------------- CONTACT PAGE --------------- */
 
-#contactcontainer {
+.container {
     display: flex;
     justify-content: center;
     width: 100%;

@@ -14,7 +14,7 @@
 <header>
     <nav>
         <div id="mobilemenu">
-            <div id="hamburger">☰</div>
+            <div id="hamburger">☰</div>  <!-- Responsive mobile navigation list, displays 'hamburger' icon at small window sizes -->
                 <ul id="hamburgerlist">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Jobs.html">Jobs</a></li>
@@ -22,24 +22,27 @@
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
         </div>
-        <ul id="navbarlist">
-            <li><a href="index.html">Home</a></li>
+        <ul id="navbarlist">  <!-- Default navigation list, displays navlist at larger window sizes -->
+            <li><a href="index.html">Home</a></li> 
             <li><a href="Jobs.html">Jobs</a></li>
             <li><a href="Profile.html">Profile</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div id="logo"> <img src="Images/Logo.png"> </div>
+
+    <div id="logo">
+        <img src="Images/Logo.png">
+    </div>
 
     <div class="account">
         <ul id="accountlinks">
             <li>
                 <a href="#" id="accountLink">
-                    <span class="account-text">Account</span> <!-- Account Link for large window sizes -->
+                    <span class="account-text">Account</span> <!-- Account/login Link for large window sizes -->
                     <i class="fas fa-user account-icon" id="usericon" aria-hidden="true"></i> <!-- User Icon for small window sizes -->
                 </a>
                 <div class="dropdown-menu" id="accountDropdown">
-                    <form id="loginForm">
+                    <form id="loginForm">       <!-- Dropdown menu for Login form -->
                         <h2>Login</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
@@ -54,7 +57,7 @@
                         <button type="submit">Login</button>
                         <button type="button" onclick="document.getElementById('loginForm').style.display='none';document.getElementById('registerForm').style.display='block';">Register</button>
                     </form>
-                    <form id="registerForm" style="display:none">
+                    <form id="registerForm" style="display:none">  <!-- Dropdown menu for Register form -->
                         <h2>Register</h2>
                         <input type="text" placeholder="Username" name="username" required>
                         <input type="password" placeholder="Password" name="password" required>
@@ -109,11 +112,11 @@
         </form>
     </div>
     <div id="jobslist">
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Software Engineer</h2>
                     <p><i>Imaginary Company</i></p>
                     <P>Full Time, Temporary</p>
@@ -123,11 +126,11 @@
                     <br>
             </div>
         </div>
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Financial Analyst</h2>
                 <p><i>Imaginary Company</i></p>
                     <P>Full Time, Permanent</p>
@@ -137,11 +140,11 @@
                     <br>
             </div>
         </div>
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Biomedical Scientist</h2>
                 <p><i>Imaginary Company</i></p>
                     <P>Full Time, Permanent</p>
@@ -151,11 +154,11 @@
                     <br>
             </div>
         </div>
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Hardware Technician</h2>
                 <p><i>Imaginary Company</i></p>
                     <P>Part Time, Permanent</p>
@@ -165,11 +168,11 @@
                     <br>
             </div>
         </div>
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Full-Stack Developer</h2>
                 <p><i>Imaginary Company</i></p>
                 <p style="text-align: right;">Apply</p>
@@ -178,11 +181,11 @@
                     <br>
             </div>
         </div>
-        <div id="joblisting">
+        <div class="joblisting">
             <div id="jobimg" style="height: 200px;">
                 <img src="Images/logotemplate.png">
             </div>
-            <div id="jobdetails">
+            <div class="jobdetails">
                 <h2>Project Manager</h2>
                 <p><i>Imaginary Company</i></p>
                 <p style="text-align: right;">Apply</p>
