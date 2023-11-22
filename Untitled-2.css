@@ -568,6 +568,23 @@ button:hover {
     }
 }
 
+@media (max-width: 500px) {
+    #topsection {
+        flex-direction: column; 
+        
+    }
+
+    #icon {
+        margin-left: 25px; 
+    }
+
+    .formsubmit {
+        width: 70%; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
 
 
 @media (min-width: 1024px) {
