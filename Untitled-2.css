@@ -240,6 +240,7 @@ header {
     color: white;
     border-bottom: 2px solid;
     border-color: black;
+    text-align: center;
 }
 
 
@@ -557,7 +558,7 @@ button:hover {
     }
 
     #icon {
-        margin-left: 60px; 
+        margin-left: 35px; 
     }
 
     .formsubmit {
