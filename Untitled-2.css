@@ -654,6 +654,10 @@ button:hover {
     font-size: 22px;
 }
 
+.jobdetails a {
+    text-decoration: none;
+}
+
 #toggleFiltersButtonJobs {
     display: none; 
 }
