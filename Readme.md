@@ -43,7 +43,7 @@ Due to the nature and purpose of the application, unavoidably users’ personal 
 •	Link front-end entry and search forms to database (PHP).\
 •	After database has been implemented, add edit forms for profile page.\
 •	Bug-test functionality of database and JavaScript elements.\
-•	Test deployment.\
+•	Test deployment.
 
 
 
