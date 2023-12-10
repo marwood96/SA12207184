@@ -22,7 +22,6 @@ An example of this can be seen in the Header section, where with the usage of Me
 
 ![ss1](https://github.com/marwood96/SA12207184/blob/main/Images/ss1.png?raw=true)
  
-Figure 2: Header and Navbar at small screen sizes, i.e., mobile devices.
 
 JavaScript allows the site to display multiple different variations of a page, for example on the Jobs page users will see a different page depending on the identity of the user; this is achieved by using JavaScript to set the Display style for the specific elements to either ‘block’ or ‘none’ depending on which button is pressed.
 
@@ -40,11 +39,11 @@ Due to the nature and purpose of the application, unavoidably users’ personal 
 
 
 ## Future objectives:
-•	Implementation of back-end database (MySQL).
-•	Link front-end entry and search forms to database (PHP).
-•	After database has been implemented, add edit forms for profile page.
-•	Bug-test functionality of database and JavaScript elements.
-•	Test deployment.
+•	Implementation of back-end database (MySQL).\
+•	Link front-end entry and search forms to database (PHP).\
+•	After database has been implemented, add edit forms for profile page.\
+•	Bug-test functionality of database and JavaScript elements.\
+•	Test deployment.\
 
 
 
