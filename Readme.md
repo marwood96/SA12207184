@@ -20,22 +20,22 @@ The project UI is currently designed using three different front-end frameworks,
 To improve responsiveness and allow for an optimal user experience across all devices, whether mobile or desktop, the CSS had originally been implemented with the use of grid tables, but to modernise and incorporate a more scalable system the Flexbox CSS technology has been adopted, which inherently resizes the elements based on window size and resolution. Alongside Flexbox, media queries have been utilised to fine-tune styling and positioning on elements at various screen sizes. 
 An example of this can be seen in the Header section, where with the usage of Media Queries and JavaScript we can give the Navigation elements different stylings at smaller resolutions and window sizes.
 
- 
-Figure 1: Header and Navbar at large window sizes.
+![ss1](https://github.com/marwood96/SA12207184/blob/main/Images/ss1.png?raw=true)
  
 Figure 2: Header and Navbar at small screen sizes, i.e., mobile devices.
 
 JavaScript allows the site to display multiple different variations of a page, for example on the Jobs page users will see a different page depending on the identity of the user; this is achieved by using JavaScript to set the Display style for the specific elements to either ‘block’ or ‘none’ depending on which button is pressed.
 
- 
-Figure 3: View of the 'Jobs' page when the student view is selected.
- 
+![ss2](https://github.com/marwood96/SA12207184/blob/main/Images/ss2.png?raw=true)
 
-Figure 4: View of the 'Jobs' page when the Business View is selected.
+![ss3](https://github.com/marwood96/SA12207184/blob/main/Images/ss3.png?raw=true)
+
 Legal and Risk Considerations:
 Due to the nature and purpose of the application, unavoidably users’ personal details will be stored in the database; because the site is intended for business use, GDPR compliance must be adhered to. Breaking GDPR protocol can incur massive fines, the largest to date being ‘Meta’, who were fined 1.2 billion euros due to failure to comply (EDPB, 2023a).  To keep users’ information safe, the site will use ‘HTTPS’ to encrypt packets sent to-and-from the user and application. Services such as Cloudflare automatically grant ‘HTTPS’ usage for free as well as offering protection from denial-of-service attacks, so the application will likely employ these services (or a similar one). As well as the encryption protocols, student users will not be able to access other students’ info; ensuring only Businesses (as these are adherent to GDPR) can access this information.
 
 ## Timeline:
+![ss4](https://github.com/marwood96/SA12207184/blob/main/Images/ss4.png?raw=true)
+
  
 
 
