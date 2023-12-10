@@ -781,23 +781,6 @@ button:hover {
 }
 
 
-/* -------------- CONTACT PAGE --------------- */
-
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-#contactform {
-    height: 700px;
-    width: 70%;
-    border: 1px solid;
-    border-color: black;
-    border-radius: 5px;
-    background-color: ivory;
-}
 
 /* -------------- FOOTER --------------- */
 
