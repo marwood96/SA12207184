@@ -87,7 +87,7 @@ header {
     z-index: 100; 
 }
 
-.dropdown-menu {
+.dropdown-menu { /*-- Dropdown login/register menu -- */
     position: absolute;
     right: 0;
     width: 300px;
@@ -290,9 +290,9 @@ header {
 }
 
 #content img {
-    width: 500px;  /* Set your desired width */
-    height: 400px; /* Set your desired height */
-    object-fit: cover; /* This will maintain the aspect ratio */
+    width: 500px;  
+    height: 400px; 
+    object-fit: cover; 
 }
 
 
@@ -394,10 +394,6 @@ header {
         }
 
  }
-
-
-
-
 
 
  /* -------------- LOGIN/REGISTER FORM --------------- */
