@@ -30,8 +30,14 @@ JavaScript allows the site to display multiple different variations of a page, f
 
 ![ss3](https://github.com/marwood96/SA12207184/blob/main/Images/ss3.png?raw=true)
 
-Legal and Risk Considerations:
-Due to the nature and purpose of the application, unavoidably users’ personal details will be stored in the database; because the site is intended for business use, GDPR compliance must be adhered to. Breaking GDPR protocol can incur massive fines, the largest to date being ‘Meta’, who were fined 1.2 billion euros due to failure to comply (EDPB, 2023a).  To keep users’ information safe, the site will use ‘HTTPS’ to encrypt packets sent to-and-from the user and application. Services such as Cloudflare automatically grant ‘HTTPS’ usage for free as well as offering protection from denial-of-service attacks, so the application will likely employ these services (or a similar one). As well as the encryption protocols, student users will not be able to access other students’ info; ensuring only Businesses (as these are adherent to GDPR) can access this information.
+The job/user search section of the application have been designed so the user can quickly see information regarding the job/user, and in the full application each entry will be clickable to show more information. Visually, inspiration for the design has been taken from competitor websites like Reed. (Reed, 2023a).
+
+## Legal and Risk Considerations:
+Due to the nature and purpose of the application, unavoidably users’ personal details will be stored in the database; because the site is intended for business use, GDPR compliance must be adhered to. Breaking GDPR protocol can incur massive fines, the largest to date being ‘Meta’, who were fined 1.2 billion euros due to failure to comply (EDPB, 2023b).  To keep users’ information safe, the site will use ‘HTTPS’ to encrypt packets sent to-and-from the user and application. Services such as Cloudflare automatically grant ‘HTTPS’ usage for free as well as offering protection from denial-of-service attacks, so the application will likely employ these services (or a similar one). As well as the encryption protocols, student users will not be able to access other students’ info; ensuring only Businesses (as these are adherent to GDPR) can access this information.
+
+Due to the ability for users and businesses to contact eachother, the application may have to factor in a report/help function or a disclaimer that the content sent is not the responsibility of the website in the event of abuse or inappropriate usage of the system. 
+
+Currently, the website has three images sourced from other websites on the home-page; they have been referenced below and will not be used in the final application due to not owning the trademark or copywrite. The application may also require a disclaimer to be signed upon sign-up/registration in order to release liability from the application owner.
 
 ## Timeline:
 ![ss4](https://github.com/marwood96/SA12207184/blob/main/Images/ss4.png?raw=true)
@@ -53,16 +59,19 @@ Due to the nature and purpose of the application, unavoidably users’ personal 
 
 •	Conboye, J., & Warwick-Ching, L. (2021, June 28). - ‘I feel left behind’: graduates struggle to secure good jobs. Financial Times. https://www.ft.com/content/2fc4e1f4-a5e8-4cbd-9bd8-f51a43b01417
 
-•	EDPB. (2023a). - 1.2 billion euro fine for Facebook as a result of EDPB binding decision | European Data Protection Board. https://edpb.europa.eu/news/news/2023/12-billion-euro-fine-facebook-result-edpb-binding-decision_en
+•	EDPB. (2023b). - 1.2 billion euro fine for Facebook as a result of EDPB binding decision | European Data Protection Board. https://edpb.europa.eu/news/news/2023/12-billion-euro-fine-facebook-result-edpb-binding-decision_en
+
+•	Reed. (2023a). - Job vacancies | Find your next dream job with Reed.co.uk. https://www.reed.co.uk/jobs
+
 
 
 ## Website images:
 
-•	Guthrie, C. (2023, October 20). - Editor’s note: Is AI a Pandora’s box? Mining Magazine. https://www.miningmagazine.com/sustainability/opinion/1461007/editors-note-october-2023
+•	DANLAW. (2021, January 26). - Danlaw earns 3rd party recognition for ISO 26262 qualification. www.danlawinc.com. https://www.danlawinc.com/danlaw-embarks-3rd-party-recognition-iso-26262-qualification/
 
 •	EUBN. (2022, August 24). - Why does a Business need an SEO Strategy to be Successful? EU Business News. https://www.eubusinessnews.com/why-does-a-business-need-an-seo-strategy-to-be-successful/
 
-•	DANLAW. (2021, January 26). - Danlaw earns 3rd party recognition for ISO 26262 qualification. www.danlawinc.com. https://www.danlawinc.com/danlaw-embarks-3rd-party-recognition-iso-26262-qualification/
+•	Guthrie, C. (2023, October 20). - Editor’s note: Is AI a Pandora’s box? Mining Magazine. https://www.miningmagazine.com/sustainability/opinion/1461007/editors-note-october-2023
 
 
 
