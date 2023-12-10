@@ -42,6 +42,8 @@ Currently, the website has three images sourced from other websites on the home-
 ## Timeline:
 ![ss4](https://github.com/marwood96/SA12207184/blob/main/Images/ss4.png?raw=true)
 
+Currently, the project consists of purely front-end code but is mostly complete. The next step is to integrate a functioning database to store the user profiles aswell as postings for the jobs page, and then incorporate PHP to ensure the input sections are able to send and return data from the database.
+
  
 
 
